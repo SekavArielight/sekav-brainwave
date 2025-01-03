@@ -1,6 +1,7 @@
 import React from "react";
 import Section from "./Section";
-import { curve } from "../assets";
+import Button from "./Button";
+import { curve, robot } from "../assets";
 
 const Hero = () => {
   return (
@@ -16,9 +17,32 @@ const Hero = () => {
           <h1 className="h1 mb-6">
             Explore the Possibilities of AI Chatting with{" "}
             <span className="inline-block relative">
-              Brainwave <img src={curve} className="absolute top-full left-0 w-full xl:-mt-2" width={624} height={28} alt="Curve" />
+              Brainwave{" "}
+              <img
+                src={curve}
+                className="absolute top-full left-0 w-full xl:-mt-2"
+                width={624}
+                height={28}
+                alt="Curve"
+              />
             </span>
           </h1>
+          <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
+            Unleash the power of AI within Brainwave. Upgrade your productivity
+            with Brainwave, the open AI chat app.
+          </p>
+          <Button href="/pricing" white>Get Started</Button>
+        </div>
+        <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">
+          <div className="relative z-1 p-0.5 rounded-2xl bg-conic-gradient">
+            <div className="relative bg-n-8 rounded-[1rem]">
+              <div className="h-[1.4rem] bg-n-10 rounded-t-[0.9rem]" />
+
+              <div>
+                <img src={robot} alt="Robot image" className="w-full" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </Section>
