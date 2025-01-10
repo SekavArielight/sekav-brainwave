@@ -1,7 +1,7 @@
 import React from "react";
 import Section from "./Section";
 import Heading from "./Heading";
-import TagLine from "./TagLine";
+import Tagline from "./Tagline";
 import Button from "./Button";
 import { roadmap } from "../constants";
 import { check2, grid, loading1 } from "../assets";
@@ -37,7 +37,7 @@ const Roadmap = () => {
 
                   <div className="relative z-1">
                     <div className="flex items-center justify-between max-w-[27rem] mb-8 md:mb-20">
-                      <TagLine>{item.date}</TagLine>
+                      <Tagline>{item.date}</Tagline>
 
                       <div className="flex items-center px-4 py-1 bg-n-1 rounded text-n-8">
                         <img
@@ -51,19 +51,18 @@ const Roadmap = () => {
                       </div>
                     </div>
 
-                      <div className="mb-10 -my-10 -mx-15">
-                        <img
-                          src={item.imageUrl}
-                          alt={item.title}
-                          className="w-full"
-                          width={630}
-                          height={420}
-                        />
-                      </div>
+                    <div className="mb-10 -my-10 -mx-15">
+                      <img
+                        src={item.imageUrl}
+                        alt={item.title}
+                        className="w-full"
+                        width={630}
+                        height={420}
+                      />
+                    </div>
 
-                      <h4 className="h4 mb-4">{item.title}</h4>
-                      <p className="body-2 text-n-4">{item.text}</p>
-                    
+                    <h4 className="h4 mb-4">{item.title}</h4>
+                    <p className="body-2 text-n-4">{item.text}</p>
                   </div>
                 </div>
               </div>
